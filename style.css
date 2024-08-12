@@ -64,7 +64,7 @@ body {
   flex-grow: 1;
 }
 
-.l_row {
+.l_col {
   margin: 80px 0;
 }
 
@@ -99,4 +99,17 @@ body {
 
 .main-contents img {
   width: 240px;
+}
+
+.l_col:nth-child(even) .main-contents {
+  display: flex;
+  flex-direction: row;
+}
+
+.l_col:nth-child(even) .contents-text h2 {
+  margin-left: 0;
+}
+
+.l_col:nth-child(even) .text p {
+  text-align: left;
 }
