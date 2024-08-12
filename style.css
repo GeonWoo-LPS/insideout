@@ -1,13 +1,22 @@
 /*Reset*/
-body {
+body, ul, p {
   margin: unset;
   padding: unset;
 }
 
-h1 {
+h1, h2 {
   margin: unset;
   font-size: unset;
   font-weight: unset;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
 }
 
 /* Typography */
@@ -53,4 +62,41 @@ body {
   line-height: 148px;
   flex-basis: 0;
   flex-grow: 1;
+}
+
+.l_row {
+  margin: 80px 0;
+}
+
+.main-contents {
+  background-color: white;
+  padding: 0 40px 0 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 60px;
+}
+
+.contents-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contents-text h2 {
+  margin-top: 30px;
+  margin-left: auto;
+}
+
+.text {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.text p {
+  text-align: right;
+}
+
+.main-contents img {
+  width: 240px;
 }
