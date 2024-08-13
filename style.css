@@ -27,7 +27,6 @@ img {
 /* Layout */
 .l_wrapper {
   max-width: 980px;
-  box-shadow: inset 0 0 10px orange;
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -74,6 +73,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   gap: 60px;
+  border-radius: 12px;
 }
 
 .contents-text {
@@ -85,16 +85,21 @@ body {
 .contents-text h2 {
   margin-top: 30px;
   margin-left: auto;
+  font-size: 32px;
+  font-weight: 900;
 }
 
 .text {
   display: flex;
   justify-content: flex-end;
   gap: 30px;
+  color: #aaaaaa;
+  line-height: 1.6;
 }
 
 .text p {
   text-align: right;
+  margin-bottom: 34px;
 }
 
 .main-contents img {
@@ -108,8 +113,48 @@ body {
 
 .l_col:nth-child(even) .contents-text h2 {
   margin-left: 0;
+
 }
 
 .l_col:nth-child(even) .text p {
   text-align: left;
+}
+
+.l_col:first-child .contents-text h2 {
+  color: #FFAD08;
+}
+
+.l_col:first-child .contents-text h2::after {
+  content: '';
+  display: block;
+  width: 77px;
+  height: 10px;
+  background-color: #FFE53C;
+  border-radius: 20px;
+}
+
+.l_col:nth-child(2) .contents-text h2 {
+  color: #578DF9;
+}
+
+.l_col:nth-child(2) .contents-text h2::after {
+  content: '';
+  display: block;
+  width: 173px;
+  height: 10px;
+  background-color: #B3E2FF;
+  border-radius: 20px;
+}
+
+.l_col:nth-child(3) .contents-text h2 {
+  color: #E9292C;
+}
+
+.l_col:nth-child(3) .contents-text h2::after {
+  content: '';
+  display: block;
+  width: 131px;
+  height: 10px;
+  background-color: #FF9680;
+  border-radius: 20px;
 }
